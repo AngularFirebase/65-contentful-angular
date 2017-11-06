@@ -1,10 +1,10 @@
-# Episode XY
+# Episode 65
 
-Watch the [screencast]()
+Watch the [Contentful Angular screencast](https://angularfirebase.com/lessons/contentful-cms-progressive-web-apps)
 
 ## Usage
 
 - `git clone`
-- create the `src/enviornments/environment.ts` file and add your firebase config to it
 - `npm install`
+- Add your Contentful API token and space ID to `environment.ts`
 - `ng serve`

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
-import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs/Observable';
+import { ContentfulService } from './contentful.service';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +9,13 @@ import { Observable } from 'rxjs/Observable';
 })
 export class AppComponent implements OnInit {
 
+  lesson$: Observable<any>;
 
-  constructor(private afs: AngularFirestore) { }
+  constructor(private contentful: ContentfulService) { }
 
-  ngOnInit() { }
-
+  ngOnInit() {
+    this.contentful.logContent('some_id')
+    this.lesson$ = this.contentful.getContent('some_id')
+  }
 
 }
