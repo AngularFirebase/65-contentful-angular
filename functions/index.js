@@ -7,6 +7,7 @@ exports.topicNotifications = functions.https.onRequest((req, res) => {
     
     // Contentful will send the entry data as the request body
     const lesson = req.body.fields
+    const topic = 'lessons'
 
     // Message details for end user
     const payload = {

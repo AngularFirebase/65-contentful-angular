@@ -1,4 +1,4 @@
-# Episode 65
+# Episode 65 - Contentful Angular
 
 Watch the [Contentful Angular screencast](https://angularfirebase.com/lessons/contentful-cms-progressive-web-apps)
 
